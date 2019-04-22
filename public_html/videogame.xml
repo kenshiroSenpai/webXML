@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<!--author: Kenshiro-->
+
+<!--xmlns="https://www.kenshiro_XHTML.com/XHTML"-->
+<!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--xsi:schemaLocation="https://www.kenshiro_XHTML.com/XHTML validator.xsd"-->
+
+<videogame>
+    <game category="action">
+        <title>God of War</title>
+        <developer>SCE Santa Monica Studio</developer>
+        <platform>Playstation4</platform>
+        <year>2018</year>
+        <price>59.95</price>
+    </game>
+    
+    <game category="adventure">
+        <title>TZOZ: breath of the wild</title>
+        <developer>Nintendo EPD</developer>
+        <platform>Nintendo Switch</platform>
+        <year>2017</year>
+        <price>54.95</price>
+    </game>
+    
+    <game category="shooter">
+        <title>Call of Duty: Black Ops 4</title>
+        <developer>Activision</developer>
+        <platform>Xbox One</platform>
+        <year>2018</year>
+        <price>39.95</price>
+    </game>
+    
+    <game category="survival">
+        <title>The Forest</title>
+        <developer>Endnight Games Ltd.</developer>
+        <platform>PC</platform>
+        <year>2014</year>
+        <price>16.79</price>
+    </game>
+    
+</videogame>

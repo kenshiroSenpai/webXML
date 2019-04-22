@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+
+<!--author: Kenshiro-->
+<videogame>
+    
+    <game category="action">
+        <title>God of War</title>
+        <developer>SCE Santa Monica Studio</developer>
+        <platform>Playstation4</platform>
+        <year>2018</year>
+        <price>59,95</price>
+    </game>
+    
+    <game category="adventure">
+        <title>the legend of zelda: breath of the wild</title>
+        <developer>Nintendo EPD</developer>
+        <platform>Nintendo Switch</platform>
+        <year>2017</year>
+        <price>59,95</price>
+    </game>
+    
+    <game category="shooter">
+        <title>Call of Duty: Black Ops 4</title>
+        <developer>Activision</developer>
+        <platform>Playstation4, Xbox One, PC</platform>
+        <year>2018</year>
+        <price>59,95</price>
+    </game>
+    
+    <game category="survival">
+        <title>The Forest</title>
+        <developer>Endnight Games Ltd.</developer>
+        <platform>Playstation4, PC</platform>
+        <year>2014</year>
+        <price>16,79</price>
+    </game>
+    
+</videogame>

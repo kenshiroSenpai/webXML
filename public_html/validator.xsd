@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.kenshiro_XHTML.com/XHTML"
+           xmlns="https://www.kenshiro_XHTML.com/XHTML"
+           elementFormDefault="qualified">
+    
+    <!--Elements-->
+    <xs:element name="videogame" type="videogame"/>
+    <xs:element name="game" type="game"/>
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="developer" type="xs:string"/>
+    <xs:element name="platform" type="xs:string"/>
+    <xs:element name="year" type="yearValidator"/>
+    <xs:element name="price" type="xs:decimal"/>
+    
+    <!--Complex-->
+    <xs:complexType name="videogame">
+        <xs:sequence>
+            <xs:element ref="game" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="game">
+        <xs:sequence>
+            <xs:element ref="title"/>
+            <xs:element ref="developer"/>
+            <xs:element ref="platform"/>
+            <xs:element ref="year"/>
+            <xs:element ref="price"/>
+        </xs:sequence>
+        <xs:attribute name="category">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="action"/>
+                    <xs:enumeration value="adventure"/>
+                    <xs:enumeration value="shooter"/>
+                    <xs:enumeration value="survival"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    
+    <!--Restriccion-->
+    
+    <xs:simpleType name="yearValidator">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
